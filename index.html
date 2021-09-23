@@ -5,34 +5,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Welcome to my Portfolio</title>
 </head>
 
 <body>
     <header>
-        <h1>Ji Hoon Park</h1>
-        <nav>
+        <a href="#" class="name">Ji Hoon Park</a>
+        <!-- <nav> -->
             <ul>
-                <!-- <li>
-                    <a href="#Home" >Home </a>
-                </li> -->
-                <li>    
-                    <a href="#About"  >About </a>
-                </li>
-                <li>
-                    <a href="#Projects" >Projects </a>
-                </li>
-                <li>
-                    <a href="#Contact" >Contact </a>
-                </li>
+                <li><a href="#About">About</a></li>
+                <li><a href="#Projects">Projects</a></li>
+                <li><a href="#Contact">Contact</a></li>
             </ul>
-        </nav>
     </header>
+    
+    <section class = "banner"></section>
+        <!-- </nav> -->
 
 <div class = "About" id="About">
    <!-- Profile pic or avatar + Bio -->
-   <img src="/assets/Images/picofme.jpg" alt="Profile Photo of Ji Hoon">
+   <img src="" alt="Profile Photo of Ji Hoon"> 
    <h1>Hi! I'm Ji Hoon Park, a full-stack developer.</h1>
    <h2>My specialties are both front-end and back-end development for complex website.</h2>
    <h2>I love learning to improve on my skills!</h2>
@@ -49,38 +45,109 @@
 
 </div>
 
-<div class = "Work" id="Projects">
+<!-- <div class = "Projects" id="Projects">
     <h1>Projects</h1>
     <br>
     <div class="work-container">
         <a href="https://jihoonswdev.github.io/codeRefractor/">
             <div class = "work-item" id="codeRefractor" alt="picture of codeRefractor">
-                <!-- <img src="./assets/Images/firstproject.PNG"> --> 
+                
                 <h2>Code Refractor</h2>
             </div>
         </a>
-        <a href="">
-            <div class = "work-item">
-                <h2>placeholder</h2>
+        <a href="https://github.com/ccardinale98/travel-support">
+            <div class = "work-item" id="travel-support" alt="picture of travel-support">
+                <h2>Travel Support</h2>
+            </div>
+        </a>
+        <a href="https://github.com/ccardinale98/project-bid-board">
+            <div class = "work-item" id="project-bid-board" alt="picture of project-bid-board">
+                <h2>Project Bid Board</h2>
             </div>
         </a>
         <a href="">
             <div class = "work-item">
                 <h2>placeholder</h2>
-            </div>
-        </a>
-        <a href="">
-            <div class = "work-item">
-                <h2>placeholder</h2>
-            </div>
-        </a>
-        <a href="">
-            <div class = "work-item">
-            <h2>placeholder</h2>
             </div>
         </a>
    </div>
+</div> -->
+<div id="projects">
+    <div class="container" id="project-container">
+        <h1 class="row" id="project-titleMain">Projects: </h1>
+        <div class="row" id="cards-row">
+            <div class="card-mb-3" style="max-width: 540px;">
+                <div class="card-img row no-gutters">
+                    <div class="card-img col-md-4">
+                        <img src="https://www.google.com/url?sa=i&url=https%3A%2F%2Fperfectial.com%2Fblog%2Fcode-refactoring%2F&psig=AOvVaw3DVyb1RbZNCKLULKao3iqs&ust=1632513965458000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCNC-i9LylfMCFQAAAAAdAAAAABAD" 
+                        alt="codeRefractor" class="card--img">
+                    </div>    
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Code Refractor</h2>
+                                <P class="card-text">
+                                    Testing!
+                                </P>
+                                <a href="https://github.com/jihoonswdev/codeRefractor" class="btn btn-primary">Github</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="card-mb-3" style="max-width: 540px;">
+                <div class="card-img row no-gutters">
+                    <div class="card-img col-md-4">
+                        <img src="" 
+                        alt="travel-support" class="card--img">
+                    </div>    
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Travel Support</h2>
+                                <P class="card-text">
+                                    Testing!
+                                </P>
+                                <a href="https://github.com/ccardinale98/travel-support" class="btn btn-primary">Github</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="card-mb-3" style="max-width: 540px;">
+                <div class="card-img row no-gutters">
+                    <div class="card-img col-md-4">
+                        <img src="" 
+                        alt="travel-support" class="card--img">
+                    </div>    
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">project-Bid-Board</h2>
+                                <P class="card-text">
+                                    Testing!
+                                </P>
+                                <a href="https://github.com/ccardinale98/project-bid-board" class="btn btn-primary">Github</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            <div class="card-mb-3" style="max-width: 540px;">
+                <div class="card-img row no-gutters">
+                    <div class="card-img col-md-4">
+                        <img src="" 
+                        alt="coming-soon" class="card--img">
+                    </div>    
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h2 class="card-title">Coming Soon</h2>
+                                <P class="card-text">
+                                    Testing!
+                                </P>
+                                <a href="https://github.com/jihoonswdev" class="btn btn-primary">Github</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+
 
 <div class = "Contact" id="Contact">
     <h1>Contact</h1>
@@ -110,7 +177,7 @@
     
         </div>
     <br>
-
+    
 <!-- <main>
     <section id="Home" class = "category">
 
@@ -124,7 +191,12 @@
         &copy; 2021 <My Portfolio>, Inc.
     </p>
 </footer> -->
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.1/umd/popper.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.27.0/moment.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.min.js"></script>
+<script src="./assets/script/script.js"></script>
 </body>
 
 </html>
