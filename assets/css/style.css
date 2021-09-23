@@ -82,6 +82,60 @@ header.sticky .logo, header.sticky ul li a {
     color: #000;
 }
 
+/* Project CSS */
+
+#projects {
+  background: url("../Images/intSmoke2.jpg");
+  justify-content: center;
+  text-align: center;
+  height: 100%;
+  margin-bottom: 0;
+}
+
+#projects-container {
+  justify-content: center;
+  text-align: center;
+  color: #343a40;
+}
+
+#project-title {
+  justify-content: center;
+  padding: 62px 20px 20px 20px;
+  color: red;
+  font-size: 6vh;
+}
+
+.card {
+  height: 45%;
+  width: 45%;
+}
+
+#cards-row {
+  justify-content: space-between;
+  padding-bottom: 62px;
+  height: 80vh;
+}
+
+.card-img {
+  height: 100%;
+}
+
+.card-title {
+  font-size: 3vh;
+  color: red;
+}
+
+.card-text {
+  font-size: 1.5vh;
+  font-size: 20px;
+  color: red;
+}
+
+.card-body a {
+  height: 4vh;
+  width: 10vh;
+  font-size: 1.5vh;
+}
 
 
 
